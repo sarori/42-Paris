@@ -18,45 +18,45 @@ I recreated **Standard C library functions**. (`stdio`, `stdlib`, `string`, `cty
 ## Functions <a name="functions"></a>
 
 | [file_descriptor] |     [number]     |    [string]    |    [list]    |  [memory]   |  [get_next_line]  | [checking] |
-| :---------------: | :--------------: | :------------: | :----------: | :---------: | :---------------: | :--------: | --- | -------- |
+| :---------------: | :--------------: | :------------: | :----------: | :---------: | :---------------: | :--------: |
 |   ft_putchar_fd   |      ft_abs      |   ft_putchar   |  ft_lstadd   |  ft_bzero   |   get_next_line   | ft_isalnum |
 |   ft_putendl_fd   |     ft_atoi      |   ft_putendl   |  ft_lstdel   | ft_memalloc | get_next_line_lst | ft_isalpha |
 |   ft_putnbr_fd    |  ft_bubble_sort  |   ft_putstr    | ft_lstdelone | ft_memccpy  |                   | ft_isascii |
-|   ft_putstr_fd    | ft_digit_base_u  |   ft_strcat    |  ft_lstiter  |  ft_memchr  |                   | ft_isdigit |     | ft_digit |
+|   ft_putstr_fd    | ft_digit_base_u  |   ft_strcat    |  ft_lstiter  |  ft_memchr  |                   |  ft_digit  |
 |                   |     ft_digit     | ft_strchr_idx  |  ft_lstmap   |  ft_memcmp  |                   | ft_isprint |
-|                   |  ft_itoa_base_u  |   ft_strchr    |  ft_lstnew   |  ft_memcpy  |                   |
-|                   |     ft_itoa      |   ft_strclr    |              |  ft_memdel  |                   |
-|                   | ft_number_length |   ft_strcmp    |              | ft_memmove  |                   |
-|                   |      ft_pow      |   ft_strcpy    |              |  ft_memset  |                   |
-|                   |    ft_putnbr     |   ft_strdel    |              |             |                   |
-|                   |     ft_swap      |   ft_strdup    |              |             |                   |            |     |
-|                   |                  |   ft_strequ    |              |             |                   |
-|                   |                  |   ft_striter   |              |             |                   |
-|                   |                  |  ft_striteri   |              |             |                   |
-|                   |                  |   ft_strjoin   |              |             |                   |
-|                   |                  |   ft_strlcat   |              |             |                   |
-|                   |                  |   ft_strlen    |              |             |                   |
-|                   |                  |   ft_strmap    |              |             |                   |
-|                   |                  |   ft_strmapi   |              |             |                   |
-|                   |                  |   ft_strncat   |              |             |                   |
-|                   |                  |   ft_strncmp   |              |             |                   |
-|                   |                  |   ft_strncpy   |              |             |                   |
-|                   |                  |   ft_strndup   |              |             |                   |
-|                   |                  |   ft_strnequ   |              |             |                   |
-|                   |                  |   ft_strnew    |              |             |                   |
-|                   |                  |   ft_strnstr   |              |             |                   |
-|                   |                  |   ft_strrchr   |              |             |                   |
-|                   |                  |  ft_strsplit   |              |             |                   |
-|                   |                  |   ft_strstr    |              |             |                   |
-|                   |                  |   ft_strsub    |              |             |                   |
-|                   |                  |   ft_strtrim   |              |             |                   |
-|                   |                  |   ft_tolower   |              |             |                   |
-|                   |                  |   ft_toupper   |              |             |                   |
-|                   |                  | ft_str_toupper |              |             |                   |
-|                   |                  |   ft_scjoin    |              |             |                   |
-|                   |                  |    ft_elem     |              |             |                   |
-|                   |                  |  free_dpchar   |              |             |                   |
-|                   |                  |  element_join  |              |             |                   |
+|                   |  ft_itoa_base_u  |   ft_strchr    |  ft_lstnew   |  ft_memcpy  |                   |            |
+|                   |     ft_itoa      |   ft_strclr    |              |  ft_memdel  |                   |            |
+|                   | ft_number_length |   ft_strcmp    |              | ft_memmove  |                   |            |
+|                   |      ft_pow      |   ft_strcpy    |              |  ft_memset  |                   |            |
+|                   |    ft_putnbr     |   ft_strdel    |              |             |                   |            |
+|                   |     ft_swap      |   ft_strdup    |              |             |                   |            |
+|                   |                  |   ft_strequ    |              |             |                   |            |
+|                   |                  |   ft_striter   |              |             |                   |            |
+|                   |                  |  ft_striteri   |              |             |                   |            |
+|                   |                  |   ft_strjoin   |              |             |                   |            |
+|                   |                  |   ft_strlcat   |              |             |                   |            |
+|                   |                  |   ft_strlen    |              |             |                   |            |
+|                   |                  |   ft_strmap    |              |             |                   |            |
+|                   |                  |   ft_strmapi   |              |             |                   |            |
+|                   |                  |   ft_strncat   |              |             |                   |            |
+|                   |                  |   ft_strncmp   |              |             |                   |            |
+|                   |                  |   ft_strncpy   |              |             |                   |            |
+|                   |                  |   ft_strndup   |              |             |                   |            |
+|                   |                  |   ft_strnequ   |              |             |                   |            |
+|                   |                  |   ft_strnew    |              |             |                   |            |
+|                   |                  |   ft_strnstr   |              |             |                   |            |
+|                   |                  |   ft_strrchr   |              |             |                   |            |
+|                   |                  |  ft_strsplit   |              |             |                   |            |
+|                   |                  |   ft_strstr    |              |             |                   |            |
+|                   |                  |   ft_strsub    |              |             |                   |            |
+|                   |                  |   ft_strtrim   |              |             |                   |            |
+|                   |                  |   ft_tolower   |              |             |                   |            |
+|                   |                  |   ft_toupper   |              |             |                   |            |
+|                   |                  | ft_str_toupper |              |             |                   |            |
+|                   |                  |   ft_scjoin    |              |             |                   |            |
+|                   |                  |    ft_elem     |              |             |                   |            |
+|                   |                  |  free_dpchar   |              |             |                   |            |
+|                   |                  |  element_join  |              |             |                   |            |
 
 ## Usage <a name="usage"></a>
 
