@@ -2,7 +2,7 @@
 
 ![42logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/240px-42_Logo.svg.png)
 
-## Table of Content
+## Table of Contents
 
 1. [About](#about-gnl)
 2. [Functions](#functions)
