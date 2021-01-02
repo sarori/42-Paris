@@ -1,0 +1,3 @@
+This file is called authorized_keys.
+It is located on .ssh folder(which is different for each users).
+~/.ssh/authorized_keys

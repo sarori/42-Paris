@@ -1,0 +1,4 @@
+e1z2r7p5.42.us.org.
+
+My IP address is 10.112.7.5 from 12.
+If I used nslookup 10.112.7.5 | grep "name" | awk '{print $4}' commnad line, I can get a e1z2r7p5.42.us.org.

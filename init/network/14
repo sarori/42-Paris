@@ -1,0 +1,4 @@
+/etc/hosts
+
+It contains hostnames and IP addresses of localhost and machine. It enable to modify.
+It is a system configuration folder of any Unix system.

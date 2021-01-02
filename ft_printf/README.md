@@ -57,4 +57,4 @@ To test the library, first compile main.c with the library:
 
 ## What I learned <a name="whatILeanred"></a>
 
-This projects helps me exercise a well-structured and good extensible code in programming in C.
+This projects helps me exercise a well-structured and good extensible code in programming.

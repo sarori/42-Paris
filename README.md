@@ -8,3 +8,6 @@ All things that I have been studied at 42 Paris and Silicon Valley.
 
 -   Libft
 -   Get_Next_Line
+-   Fillit
+-   Ft_printf
+-   Init

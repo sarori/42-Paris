@@ -1,0 +1,4 @@
+cat /etc/resolv.conf
+The file resolv.conf typically contains directives that specify the default search domains. 
+resolv.conf is usually located in the /etc directory of the file system.
+whenever DHCP activate network interface, then the file /etc/resolve.conf is automatically made by DHCP client program which contains DNS server.
