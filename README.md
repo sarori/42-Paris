@@ -12,3 +12,6 @@ All things that I have been studied at 42 Paris and Silicon Valley.
 -   Ft_printf
 -   Init
 -   Docker
+-   PHP piscine
+-   Ft_ssl_md5
+-   Filler
