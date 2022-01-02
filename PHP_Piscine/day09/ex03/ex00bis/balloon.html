@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		let counter = 0;
+		let size = 200;
+
+		const getColor = () => {
+			const cnt = (counter < 0 ? counter * -1 : counter);
+			if (cnt % 3 === 0){
+				return 'red';
+			} else if (cnt % 3 === 1){
+				return 'blue';
+			} else {
+				return 'green';
+			}
+		}
+
+		$(function(){
+			$('#ballon').css({
+				height: `${size}px`,
+				width: `${size}px`,
+				borderRadius: "50%",
+				margin: '5 auto',
+				backgroundColor: `${getColor()}`,
+			})
+
+			$('#ballon').on('click',function(){
+				counter += 1;
+				if (size + 10 > 420){
+					size = 200;
+				}else{
+					size += 10;
+				}
+				size += size + counter * 10 >= 420 ? 0 : 10;
+				$(this).css({
+					backgroundColor: getColor(),
+					height: `${size}px` ,
+					width: `${size}px`,
+					})
+			});
+
+			$('#ballon').mouseleave(function(){
+				counter -= 1;
+				if (size - 5 <= 200){
+					size = 200;
+				}else{
+					size -= 5;
+				}
+				$(this).css({
+					backgroundColor: getColor(),
+					height: `${size}px` ,
+					width: `${size}px`,
+					})
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="ballon"></div>
+</body>
+</html>

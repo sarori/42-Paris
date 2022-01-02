@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<div>
+		<h1>Calculator</h1>
+		<input type="text">
+		<select>
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text">
+		<input id="btn" type="submit" value="Try Me!">
+</div>
+</body>
+
+<script>
+	document.querySelector("#btn").addEventListener('click', () => {
+		const [num1, num2] = document.querySelectorAll('input');
+		const operator = document.querySelector('select').value;
+		const a = Number(num1.value);
+		const b = Number(num2.value);
+		let result;
+		if (isNaN(num1.value) || isNaN(num2.value)) {
+			result = 'Error :(Invalid Value)';
+		} else if (a < 0 || b < 0) {
+			result = 'Error :(Negative number is not supported)';
+		} else if ((operator === '%' || operator === '/')
+			&& b === 0){
+			result = `Error :(It's over 9000)`;
+		} else {
+			result = `${eval(`${a} ${operator} ${b}`)}`;
+		}
+		console.log(result);
+		alert(result);
+	});
+
+window.setInterval(() => alert("Please, use me..."), 30000);
+</script>
+</html>
